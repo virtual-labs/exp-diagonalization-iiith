@@ -2,35 +2,45 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What property makes a set countable?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "no decimal values",
+        "b": "no negative values",
+        "c": "bijection with natural numbers",
+        "d": "bijection with real numbers"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "rational numbers can have decials but are countable",
+        "b": "integers are countable",
+        "d": "bijection with natural numbers makes a set countable. This way, set of real numbers isn't countalbe."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "set of all real numbers is ______",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "infinite and countable",
+        "b": "finite and countable",
+        "c": "infinite and uncountable",
+        "d": "infinite and countable"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "There are infinite number of real numbers between any two real numbers, and the can not all be mapped to natural numbers."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "what type of set can a turing machine not accept?",
+      "answers": {
+        "a": "infinite and countable",
+        "b": "finite and countable",
+        "c": "infinite and uncountable",
+        "d": "infinite and countable"
+      },
+      "explanations": {
+        "c": "Only countable sets are turing decidable."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"

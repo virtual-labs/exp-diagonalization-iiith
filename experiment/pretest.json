@@ -2,37 +2,46 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of these is an infinite set?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "all rational numbers from 1 to 1 billion",
+        "b": "all real numbers from 5 to 10",
+        "c": "integers smaller than 2^10",
+        "d": "all of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "There are infinitely many rational numbers between any two rational numbers",
+        "b": "There are infinitely many real numbers between any two real numbers",
+        "c": "there are infinite negative integers smaller than any integer"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "A function exists where each element of the domain is mapped to one element of the co domain which is of same size. this function is ______",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
+        "a": "injective",
+        "b": "surjective",
+        "c": "bijective",
+        "d": "none of the these"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A function f(x)=4x has domain that is first 4 natural numbers and co domain that is first 16 natural numbers. the function is ______",
+      "answers": {
+        "a": "injective",
+        "b": "surjective",
+        "c": "bijective",
         "d": "answer4"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "the function is one to one or surjective because f(x) only has one value for any possible value of x",
+        "b": "the function is not surjective as there are elements in the co domain that aren't mapped to any element of the domain, like 5",
+        "c": "the function is not bijective because it isn't surjective. BIjective function must be both injective and surjective."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

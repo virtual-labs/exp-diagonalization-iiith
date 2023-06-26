@@ -1,1 +1,232 @@
 /* You CSS goes in here */
+body {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+  
+  text {
+    pointer-events:none;
+  }
+  
+  
+  .container {
+    margin-top: 1%;
+  }
+  
+  .column {
+    text-align: center;
+  }
+  
+  #cy {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    margin: 5px;
+    top: 33%;
+    left: 28%;
+  
+    border: 0.2rem solid black;
+  }
+  
+  
+  .success-message {
+    font-size: 1.2rem;
+    color: rgb(31, 170, 31);
+    font-weight: bold;
+  }
+  
+  .failure-message {
+    font-size: 1.2rem;
+    color: rgb(228, 23, 23);
+    font-weight: bold;
+  }
+  
+  .highlight {
+    border:3px solid red;
+    box-shadow: 0 0 10px #719ECE;
+  }
+  
+  /* for dropping instruction box  */
+  
+  .instructions-box {
+    max-height: 50px;
+    overflow: hidden;
+    transition: all .5s ease;
+   
+  }
+  
+  .instructions-box.expand {
+    max-height: 400px;
+  }
+  
+  .v-instruction-container {
+    border: .2rem solid #97d23d;
+    justify-content: flex-start;
+  }
+  
+  #observations {
+    font-size: 1.25em;
+  }
+  
+  
+  .success-table{
+    font-size: 1rem;
+    color: rgb(31, 170, 31);
+    font-weight: bold;
+  }
+  
+  .failure-table{
+    font-size: 1rem;
+    color: rgb(228, 23, 23);
+    font-weight: bold;
+  }
+  
+  .bold-table{
+    font-weight: bold;
+  }
+  
+.description {
+	margin:0 10% 0 10%;
+	border:5px solid red;
+	border-radius:15px;
+	position:relative
+}
+.desc {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.form_div{
+	display:flex;
+}
+.table{
+	display:flex;
+	flex-direction:column;
+	align-items:right;
+	border:5px solid red;
+	border-radius:15px;
+	margin:1% 10% 0 70%;
+}
+.generate{
+	margin:5px
+}
+.description {
+     margin: 0 10% 0 10%;
+     border: 5px solid red;
+     border-radius: 15px;
+     position: relative;
+}
+ .desc {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+ .form_div {
+     display: flex;
+}
+ .generate {
+     margin: 5px;
+}
+
+ p {
+     margin: 0;
+     padding: 0;
+}
+ .listItem {
+     padding: 10px;
+     display: flex;
+}
+ .sKey {
+     min-width: 25px;
+}
+ .sValue {
+     margin-right: 5px;
+}
+ .equalSign {
+     width: 20px;
+}
+ .cantorTable {
+     display: flex;
+     flex-direction: column;
+     width: fit-content;
+     border: 5px solid red;
+     border-radius: 15px;
+}
+ .answer {
+     display: flex;
+     flex-direction: column;
+     width: fit-content;
+     border-radius: 10px;
+     border: 5px solid red;
+     margin-top: 10px;
+}
+ .highlightItem {
+     color: red;
+     animation: animateColor 2s linear infinite;
+}
+ @keyframes animateColor {
+     0% {
+         color: red;
+    }
+     25% {
+         color: black;
+    }
+     50% {
+         color: red;
+    }
+     100% {
+         color: red;
+    }
+}
+ .wrapper {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 20px;
+}
+ .form {
+     padding: 1%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: fit-content;
+     border: 5px solid red;
+     border-radius: 15px;
+}
+
+#errorId {
+    font-style: italic;
+    font-size: 12px;
+    color: brown;
+    margin: 5px;
+  }
+
+  .gridBody{
+    display: grid;
+    grid-template-areas:
+      'details details'
+      'main image';
+  }
+  
+  .gridBody > div:nth-child(1){
+    grid-area:details;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    width: 80%;
+  }
+  
+  .gridBody > div:nth-child(2){
+    grid-area:main;
+    display: flex;
+    margin-left: 20%;
+    width: auto;
+  }
+  
+  .gridBody > div:nth-child(3){
+    grid-area:image;
+  }

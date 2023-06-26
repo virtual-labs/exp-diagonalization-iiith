@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Diagonalization</title>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+    
+    
+    <!-- Add CSS at the head of HTML file -->
+      <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <div class="columns is-centered">
+			<div class="column">
+				<div class="v-collapsible-instruction-container v-instruction-container">
+					<div id="instruction-title" class="v-collapsible is-size-5">Cantor's Diagonalization<br>Description</div>
+					<div class="v-content" style="text-align: left; padding-left: 5%; padding-right: 5%;">
+						<ul style="list-style: disc;">
+        <li>This simulation shows that the set of all binary sequences is uncountable, using Cantor's Diagonalization argument</li>
+        <li>We assume the set of all binary sequences was countable. This means we can enumerate them.</li>
+		<li>Consider the set T of all infinite sequences of binary digits </li>
+		<li>The sequences given below in the grid in the simulation are randomly generated elements from T, then an element s of T can be constructed that doesn't correspond to any element in the enumeration.</li>
+		<li>A sequence s is constructed by choosing the 1st digit as complementary to the 1st digit of the first element, the 2nd digit as complementary to the 2nd digit of second element, the 3rd digit as complementary to the 3rd digit of third element, and generally for every n, the nth digit as complementary to the nth digit of nth element in the grid</li>
+		<li>By construction, s is a member of T that differs from each element in the grid, since their nth digits differ. Hence, s cannot occur in the enumeration.</li>
+		<li>With s being different from all other enumerations by definition,T does not contain all possible enumeration of binary sequences. Note that this argument works for every enumeration. Hence, it is not possible to enumerate the set of all binary sequences which implies set of all binary strings is uncountable.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <div class="column is-2-desktop is-4-tablet is-12-mobile">
+			<div class="v-datalist-container components-list">
+				<div class="v-datalist-title">String Window</div>
+				<div class="v-datalist-row">
+					<div id="observations">
+            <div id="cantorId">Click Generate</div>
+        <div id="answerId"></div>
+          </div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+    <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start">
+			<div class="column is-2-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container" style="height:100%;">
+					<div class="v-datalist-title">Controls</div>
+					<div class="v-datalist-row">
+					<div id="controls"></div>
+					<div id="errorId"></div>
+          <form>
+            <label for="fname">Window Size:</label>
+            <br>
+            <input type="number" class="input" name="size">
+            <br>
+            <button class="generate" type="button">Generate</button>
+            <div id="errorId"></div>
+          </form>
+					</div>
+				</div>
+			</div>
+
+    <!-- Add JS at the bottom of HTML file -->
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
 </body>
 </html>

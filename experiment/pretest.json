@@ -4,21 +4,21 @@
     {
       "question": "Which of these is an infinite set?",
       "answers": {
-        "a": "all rational numbers from 1 to 1 billion",
-        "b": "all real numbers from 5 to 10",
-        "c": "integers smaller than 2^10",
+        "a": "all rational numbers from $1$ to $1$ billion",
+        "b": "all real numbers from $5$ to $10$",
+        "c": "integers smaller than $2^10$",
         "d": "all of the above"
       },
       "explanations": {
-        "a": "There are infinitely many rational numbers between any two rational numbers",
-        "b": "There are infinitely many real numbers between any two real numbers",
-        "c": "there are infinite negative integers smaller than any integer"
+        "a": "There are infinitely many rational numbers between any two rational numbers.",
+        "b": "There are infinitely many real numbers between any two real numbers.",
+        "c": "there are infinite negative integers smaller than any integer."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "A function exists where each element of the domain is mapped to one element of the co domain which is of same size. this function is ______",
+      "question": "Consider a function where no two elements of the domain map to the same element in the co-domain and where the size of the domain and the co-domain is the same. Such function is ______.",
       "answers": {
         "a": "injective",
         "b": "surjective",
@@ -29,17 +29,39 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A function f(x)=4x has domain that is first 4 natural numbers and co domain that is first 16 natural numbers. the function is ______",
+      "question": "Consider a function where two elements of the domain may map to the same element in the co-domain and where the size of the domain and the co-domain is the same. Such function is ______.",
       "answers": {
         "a": "injective",
         "b": "surjective",
         "c": "bijective",
-        "d": "answer4"
+        "d": "none of the these"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider a function where every element of the co-domain is mapped by some element of the domain. Such function is ______.",
+      "answers": {
+        "a": "injective",
+        "b": "surjective",
+        "c": "bijective",
+        "d": "none of the these"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A function $f(x)=4x$ maps the set ${1,2,3,4}$ to the set ${1,2,...,16}$. The function is ______.",
+      "answers": {
+        "a": "injective",
+        "b": "surjective",
+        "c": "bijective",
+        "d": "none of these"
       },
       "explanations": {
-        "a": "the function is one to one or surjective because f(x) only has one value for any possible value of x",
-        "b": "the function is not surjective as there are elements in the co domain that aren't mapped to any element of the domain, like 5",
-        "c": "the function is not bijective because it isn't surjective. BIjective function must be both injective and surjective."
+        "a": "The function is one-to-one or injective because $f(x)$ maps distict values of domain to distinct values in co-domain.",
+        "b": "The function is not surjective as there are elements in the co-domain that are not mapped to any element of the domain, for example 5.",
+        "c": "The function is not bijective because it is not surjective. Bijective function must be both injective and surjective."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"

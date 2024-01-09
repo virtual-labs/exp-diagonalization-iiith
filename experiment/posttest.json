@@ -10,15 +10,15 @@
         "d": "bijection with real numbers"
       },
       "explanations": {
-        "a": "rational numbers can have decials but are countable",
-        "b": "integers are countable",
-        "d": "bijection with natural numbers makes a set countable. This way, set of real numbers isn't countalbe."
+        "a": "Rational numbers can have decimals but are countable.",
+        "b": "Integers are countable.",
+        "d": "Bijection with natural numbers makes a set countable. This way, the set of real numbers is not countable."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "set of all real numbers is ______",
+      "question": "The set of all real numbers is ______.",
       "answers": {
         "a": "infinite and countable",
         "b": "finite and countable",
@@ -26,23 +26,49 @@
         "d": "infinite and countable"
       },
       "explanations": {
-        "c": "There are infinite number of real numbers between any two real numbers, and the can not all be mapped to natural numbers."
+        "c": "There are infinite number of real numbers between any two real numbers, and they can not all be mapped to natural numbers. This can be shown using diagonalization argument."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "what type of set can a turing machine not accept?",
+      "question": "Which of these is an uncountable set?",
       "answers": {
-        "a": "infinite and countable",
-        "b": "finite and countable",
-        "c": "infinite and uncountable",
-        "d": "infinite and countable"
+        "a": "integers",
+        "b": "rational numbers",
+        "c": "binary numbers",
+        "d": "none of the above"
       },
       "explanations": {
-        "c": "Only countable sets are turing decidable."
+        "d": "All of the above mentioned set of numbers are countable as they can be mapped to natural numbers."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of these is a countable set?",
+      "answers": {
+        "a": "integers",
+        "b": "rational numbers",
+        "c": "binary numbers",
+        "d": "all of the above"
+      },
+      "explanations": {
+        "d": "All of the above mentioned set of numbers are countable as they can be mapped to natural numbers."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "There are languages that can not be accepted by a turing machine",
+      "answers": {
+        "a": "true",
+        "b": "false"
+      },
+      "explanations": {
+        "a": "There are countably many Turing machines and uncountably many languages, so there are some languages that a Turing machine can not accept."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

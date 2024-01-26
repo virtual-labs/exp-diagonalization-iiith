@@ -206,27 +206,13 @@ body {
     margin: 5px;
   }
 
-  .gridBody{
-    display: grid;
-    grid-template-areas:
-      'details details'
-      'main image';
+  #containers{
+      display: flex;
+      justify-content: space-around;
   }
-  
-  .gridBody > div:nth-child(1){
-    grid-area:details;
-    margin-left: 10%;
-    margin-top: 0.5%;
-    width: 80%;
+  #controls-wrapper{
+      width: auto;
   }
-  
-  .gridBody > div:nth-child(2){
-    grid-area:main;
-    display: flex;
-    margin-left: 20%;
+  #stringWindow{
     width: auto;
-  }
-  
-  .gridBody > div:nth-child(3){
-    grid-area:image;
   }

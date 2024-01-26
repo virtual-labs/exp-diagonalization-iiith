@@ -1,6 +1,12 @@
 document.body.setAttribute("class","gridBody");
 let controlsDiv = document.getElementsByClassName('column is-2-desktop is-12-tablet is-12-mobile')[0];
 controlsDiv.style.width = 'auto';
+let x;
+let y=[];
+let s = [];
+let miss=[];
+let correctness=1;
+let correction="With indexes starting from 0, The bits at positions "
 document
     .getElementsByClassName("generate")[0]
     .addEventListener("click", runstuff);
@@ -17,6 +23,8 @@ function sValueGenerator(chosenValue, binarySequence) {
 }
 
 function runstuff() {
+    s.length=0;
+    document.getElementById("answerId").value="";
 let j = document.getElementsByClassName("input")[0].value;
     let copyj = j;
     j = Number(j);
@@ -25,7 +33,6 @@ if(copyj && isInteger && j>=0 && j<11){
     
     let list = [];
     let list3 = [];
-    let s = [];
     for (let i = 0; i < j; i++) {
         list[i] = Math.floor(Math.random() * 2 ** j)
             .toString(2)
@@ -54,7 +61,7 @@ if(copyj && isInteger && j>=0 && j<11){
     itemToInfinity.classList.add("listItem");
     cantorEl.appendChild(itemToInfinity);
 
-    let answer = document.getElementById("answerId");
+    /*let answer = document.getElementById("answerId");
     answer.innerHTML = "";
     answer.classList.add("answer");
     let ans = document.createElement("p");
@@ -64,8 +71,67 @@ if(copyj && isInteger && j>=0 && j<11){
         sValueGenerator(-1, s) +
         "<span>. . .</span>";
     ans.classList.add("listItem");
-    answer.appendChild(ans);
+    answer.appendChild(ans);*/
+    console.log(s)
+
+
 }
 else{
     document.getElementById('errorId').innerHTML = "n should be an integer between 0 and 10";
 }}
+
+document.getElementById("check").addEventListener("click", check);
+
+    function check(){
+        correctness=1;
+        j=0;
+        if(s==""){
+            console.log("generate");
+        }
+        else{
+            x=document.getElementById("answerId").value;
+            console.log(x);
+            console.log(x[0])
+           for(i=0;i<x.length;){
+                y[i]=x[i];
+                i=i+1;
+            } 
+            if(s.length!==y.length){
+                correctness=0;
+                document.getElementById("observations1").innerHTML="length does not match";
+                console.log("nope")}
+                else{
+                    for(i=0;i<y.length;){
+                        if(s[i]==y[i]){
+                            if(i==s.length-1){
+                                console.log("yup")
+                            }
+                            console.log("a")
+                            i=i+1
+                        }
+                        else{
+                            correctness=0;
+                            miss[j]=i;
+                            j=j+1;
+                            i=i+1
+                            console.log("nope2")
+                        }
+                    }
+                    if(correctness==0){
+                        for(i=0;i<miss.length-1;){
+                            correction=correction+miss[i]+",";
+                            i=i+1;
+                        }
+                        correction=correction.slice(0,correction.length-1)+" "+"and "+miss[miss.length-1]+" "+"are incorrect.";
+                        document.getElementById("observations1").innerHTML=correction;
+                    }
+                }
+                if(correctness==1){
+            document.getElementById("correctness").innerHTML="correct";}
+            else{
+                document.getElementById("correctness").innerHTML="incorrect";
+            }
+        }
+            
+        
+    }

@@ -1,24 +1,22 @@
-### Theory
-
 # Sets
 
-A set is a collection of distinct elements where the number of elements may or may not be finite. Theese elements can be numbers, letters, symbols or even other sets. 
+A set is a collection of distinct elements where the number of elements may or may not be finite. Theese elements can be numbers, letters, symbols or even other sets. For example $A=\{1,2,3,4,5\}$ is a set with five elements.
 
-## Countable Sets
+# Countable Sets
 
 A countable set is one that has finite number of elements or all its elements can be mapped bijectively to the elements of the set of natural numbers if the set has infinitely many items.
 
 # Surjective Function
 
-A function $f:A\rightarrow B$ is surjective (or onto) if every element in set $B$ has a corresponding element in set $A$ such that the function maps to it or the range of the function $f$ covers all elements in set $B$.
+A function $f:A\rightarrow B$ is surjective (or onto) if every element in set $B$ has a corresponding element in set $A$ such that the function maps to it or the range of the function $f$ covers all elements in set $B$. for example, for $f(x)=x^2$ and $f:A\rightarrowB$ with $A=\{-1,1,2,3\}$ and $B=\{1,4,9\}$, $f(x)$ is a surjective function.
 
 # Injective Function
 
-A function $f:A\rightarrow B$ is injective (or one-to-one) if each element in set $A$ maps to a unique element in set $B$. In other words, no two distinct elements in set $A$ are mapped to the same element in set $B$.
+A function $f:A\rightarrow B$ is injective (or one-to-one) if each element in set $A$ maps to a unique element in set $B$. In other words, no two distinct elements in set $A$ are mapped to the same element in set $B$. for example, for $f(x)=x^2$ and $f:A\rightarrowB$ with $A=\{1,2,3\}$ and $B=\{1,2,4,5,9\}$, $f(x)$ is a surjective function.
 
 # Bijective Function
 
-A function that is both injective and surjective at the same time is called a bijective function.
+A function that is both injective and surjective at the same time is called a bijective function. A permutation is an example of a bijective function.
 
 # Bijection of the fucntion $f(x)=cx$ and natural numbers
 An example of bijection between the natural numbers and a countable set can be seen in $f(x)=cx$ where $x$ belongs to the natural numbers, $c$ represents a constant and thus $f(x)$ provides a unique number for every unique $x$. since $f(x)$ may not have all the numbers from $x$, it could appear to be smaller as being a proper subset of $x$ if $c$ is positive. But, there exists a unique $f(x)$ for any $x$ possible, thus the size of $x$ and $f(x)$ must be same. This can be observed in the set of all even numbers where $c=2$ in 

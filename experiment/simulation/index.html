@@ -8,7 +8,8 @@
     <title>Diagonalization</title>
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
-    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <!-- Add CSS at the head of HTML file -->
       <link rel="stylesheet" href="./css/main.css">
@@ -22,34 +23,19 @@
 					<div id="instruction-title" class="v-collapsible is-size-5">Cantor's Diagonalization<br>Description</div>
 					<div class="v-content" style="text-align: left; padding-left: 5%; padding-right: 5%;">
 						<ul style="list-style: disc;">
-        <li>This simulation shows that the set of all binary sequences is uncountable, using Cantor's Diagonalization argument</li>
-        <li>We assume the set of all binary sequences was countable. This means we can enumerate them.</li>
-		<li>Consider the set T of all infinite sequences of binary digits </li>
-		<li>The sequences given below in the grid in the simulation are randomly generated elements from T, then an element s of T can be constructed that doesn't correspond to any element in the enumeration.</li>
-		<li>A sequence s is constructed by choosing the 1st digit as complementary to the 1st digit of the first element, the 2nd digit as complementary to the 2nd digit of second element, the 3rd digit as complementary to the 3rd digit of third element, and generally for every n, the nth digit as complementary to the nth digit of nth element in the grid</li>
-		<li>By construction, s is a member of T that differs from each element in the grid, since their nth digits differ. Hence, s cannot occur in the enumeration.</li>
-		<li>With s being different from all other enumerations by definition,T does not contain all possible enumeration of binary sequences. Note that this argument works for every enumeration. Hence, it is not possible to enumerate the set of all binary sequences which implies set of all binary strings is uncountable.</li>
+        <li>This simulation aims to show that the set of all binary sequences is uncountable, using Cantor's Diagonalization argument</li>
+        <li>Since the number and length of the binary strings used is infinite, only a small part of it is visible. By choosing a value in window size, you can choose the number and length of binary strings visible.</li>
+		<li>In accordance with Cantor's Diagonalization argument, find a substring thats different from all the visible substrings, thus making it different compared to their parent strings.</li>
+		<li>Size of the substring to be entered must match the size of substrings in the string window that is visible to you. A smaller sized substring can not be different from the string in the string window with certainity. A larger sized string predicts the diagonal element of the next string which may not be correct given we can not predict the next string with certainity.</li>
+		<li>Check your answer using the check button. If your answer is incorrect but correct length, you will be shown the incorrect bits.</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-
-    <div class="column is-2-desktop is-4-tablet is-12-mobile">
-			<div class="v-datalist-container components-list">
-				<div class="v-datalist-title">String Window</div>
-				<div class="v-datalist-row">
-					<div id="observations">
-            <div id="cantorId">Click Generate</div>
-        <div id="answerId"></div>
-          </div>
-				</div>
-			</div>
-		</div>
-		</div>
-
+		<div id="containers">
     <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start">
-			<div class="column is-2-desktop is-12-tablet is-12-mobile">
+			<div id="controls-wrapper" class="column is-2-desktop is-12-tablet is-12-mobile">
 				<div class="v-datalist-container" style="height:100%;">
 					<div class="v-datalist-title">Controls</div>
 					<div class="v-datalist-row">
@@ -61,12 +47,40 @@
             <input type="number" class="input" name="size">
             <br>
             <button class="generate" type="button">Generate</button>
+			<br>
+			<h4>Input your answer:</h4>
+			<input type="text" class="input" id="answerId" />
+			<button id="check" type="button">Check</button>
             <div id="errorId"></div>
           </form>
 					</div>
 				</div>
 			</div>
+	</div>
 
+	<div id="stringWindow" class="column is-2-desktop is-4-tablet is-12-mobile">
+		<div class="v-datalist-container components-list">
+			<div class="v-datalist-title">String Window</div>
+			<div class="v-datalist-row">
+				<div id="observations">
+		<div id="cantorId">Click Generate</div>
+	  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="column is-2-desktop is-4-tablet is-12-mobile">
+		<div class="v-datalist-container components-list">
+			<div class="v-datalist-title">Observations</div>
+			<div class="v-datalist-row">
+				<div id="correctness"></div>
+			</div>
+			<div class="v-datalist-row">
+				<div id="observations1"></div>
+			</div>
+		</div>
+	</div>
+	</div>
     <!-- Add JS at the bottom of HTML file -->
     <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
     <script src="./js/main.js"></script>

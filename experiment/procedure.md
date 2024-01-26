@@ -1,4 +1,4 @@
-### Procedure
+# Procedure
 
 The experiment simulation shows an example of Cantor's diagonlization on binary numbers. It shows n strings among infinte binary strings of infinite length of which first n characters are visible. The n here is the window size which is based on user input and goes from 1 to 10 in integer values. Using the strings and their parts visible to use, we try to find a string dissimilar to all of them. we enter the resutling string in the area that appears in the simulation after generating the strings. we click check to check if the entered string is correct or not.
 

@@ -6,7 +6,8 @@ let y=[];
 let s = [];
 let miss=[];
 let correctness=1;
-let correction="With indexes starting from 0, The bits at positions "
+let correction="With indexes starting from 0. The bits at positions "
+document.getElementById("check").disabled=true;
 document
     .getElementsByClassName("generate")[0]
     .addEventListener("click", runstuff);
@@ -23,13 +24,14 @@ function sValueGenerator(chosenValue, binarySequence) {
 }
 
 function runstuff() {
+    document.getElementById("check").disabled=false;
     s.length=0;
     document.getElementById("answerId").value="";
 let j = document.getElementsByClassName("input")[0].value;
     let copyj = j;
     j = Number(j);
     const isInteger = Number.isInteger(j);
-if(copyj && isInteger && j>=0 && j<11){
+if(copyj && isInteger && j>=4 && j<11){
     
     let list = [];
     let list3 = [];
@@ -77,12 +79,13 @@ if(copyj && isInteger && j>=0 && j<11){
 
 }
 else{
-    document.getElementById('errorId').innerHTML = "n should be an integer between 0 and 10";
+    document.getElementById('errorId').innerHTML = "n should be an integer between 4 and 10";
 }}
 
 document.getElementById("check").addEventListener("click", check);
 
     function check(){
+        document.getElementById("check").disabled=true;
         correctness=1;
         j=0;
         if(s==""){
@@ -98,7 +101,7 @@ document.getElementById("check").addEventListener("click", check);
             } 
             if(s.length!==y.length){
                 correctness=0;
-                document.getElementById("observations1").innerHTML="length does not match";
+                document.getElementById("observations1").innerHTML="Length of the input does not match with the correct answer.";
                 console.log("nope")}
                 else{
                     for(i=0;i<y.length;){
@@ -127,9 +130,12 @@ document.getElementById("check").addEventListener("click", check);
                     }
                 }
                 if(correctness==1){
-            document.getElementById("correctness").innerHTML="correct";}
+                   document.getElementById("correctness").style.color="#29FF46";
+                   document.getElementById("observations1").innerHTML="";
+            document.getElementById("correctness").innerHTML="Correct";}
             else{
-                document.getElementById("correctness").innerHTML="incorrect";
+                document.getElementById("correctness").style.color="#FF5151";
+                document.getElementById("correctness").innerHTML="Incorrect";
             }
         }
             

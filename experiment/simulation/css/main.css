@@ -210,9 +210,20 @@ body {
       display: flex;
       justify-content: space-around;
   }
+
   #controls-wrapper{
       width: auto;
   }
+
   #stringWindow{
     width: auto;
+  }
+
+  #check{
+    margin-top: 5px;
+  }
+
+  #correctness{
+    font-weight: bold;
+    font-size:x-large;
   }

@@ -6,7 +6,7 @@
       "answers": {
         "a": "all rational numbers from $1$ to $1$ billion",
         "b": "all real numbers from $5$ to $10$",
-        "c": "integers smaller than $2^10$",
+        "c": "integers smaller than $2^(10)$",
         "d": "all of the above"
       },
       "explanations": {
@@ -51,7 +51,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A function $f(x)=4x$ maps the set ${1,2,3,4}$ to the set ${1,2,...,16}$. The function is ______.",
+      "question": "A function $f(x)=4x$ maps the set $\\{1,2,3,4\\}$ to the set $\\{1,2,...,16\\}$. The function is ______.",
       "answers": {
         "a": "injective",
         "b": "surjective",
@@ -60,7 +60,7 @@
       },
       "explanations": {
         "a": "The function is one-to-one or injective because $f(x)$ maps distict values of domain to distinct values in co-domain.",
-        "b": "The function is not surjective as there are elements in the co-domain that are not mapped to any element of the domain, for example 5.",
+        "b": "The function is not surjective as there are elements in the co-domain that are not mapped to any element of the domain, for example $5$.",
         "c": "The function is not bijective because it is not surjective. Bijective function must be both injective and surjective."
       },
       "correctAnswer": "a",

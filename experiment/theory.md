@@ -1,6 +1,6 @@
 ## Sets
 
-A set is a collection of distinct elements where the number of elements may or may not be finite. Theese elements can be numbers, letters, symbols or even other sets. For example $A=\{1,2,3,4,5\}$ is a set with five elements.
+A set is a collection of distinct elements where the number of elements may or may not be finite. These elements can be numbers, letters, symbols or even other sets. For example $A=\{1,2,3,4,5\}$ is a set with five elements.
 
 ## Countable Sets
 

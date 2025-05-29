@@ -5,7 +5,7 @@
 | 2   | Girish Varma       | girish.varma@iiit.ac.in           | IIIT Hyderabad  |     |
 
 ### Developers
-| SNo. | Name               | Email                               | Institute       |
+| SNo. | Name               | Email                               | Position Held    |
 | :---: | :------------------:| :------------------------------------:| :---------------:|
-| 1   | Atul Sangwan        | atulsangwan152@gmail.com            |                 |
-| 2   | Nikhil Reddy Billa  | nikhilreddybilla128@gmail.com       |                 |
+| 1   | Atul Sangwan        | atulsangwan152@gmail.com           |    Intern        |
+| 2   | Nikhil Reddy Billa  | nikhilreddybilla128@gmail.com      |    Intern       |

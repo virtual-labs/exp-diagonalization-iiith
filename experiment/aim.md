@@ -1,3 +1,1 @@
-# Aim
-
 This experiment aims to introduce you to the concept of diagonalization by Georg Cantor. This will allow you understand what a countable or uncountable set means, while allowing you to figure out if a given set is countable or uncountable using diagonalization. This will be done through a refesher on concepts of "sets and subsets" and "mapping two sets in a function". This information will be used to map the domain of natural numbers to any given co domain set for the fucntion on Cantor's diagonalization.

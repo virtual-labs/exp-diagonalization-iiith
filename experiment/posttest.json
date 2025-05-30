@@ -10,9 +10,10 @@
         "d": "bijection with real numbers"
       },
       "explanations": {
-        "a": "Rational numbers can have decimals but are countable.",
-        "b": "Integers are countable.",
-        "d": "Bijection with natural numbers makes a set countable. This way, the set of real numbers is not countable."
+        "a": "Incorrect! Having decimal values doesn't determine countability - for example, rational numbers (like 1/2, 1/3) have decimals but are countable through a bijection with natural numbers.",
+        "b": "Incorrect! The presence of negative values is irrelevant to countability - integers are countable despite having negative values, via the bijection f(n) = n/2 if n is even, -(n-1)/2 if n is odd.",
+        "c": "Correct! By definition, a set is countable if and only if there exists a bijection (one-to-one and onto function) between it and the natural numbers or a finite subset of natural numbers.",
+        "d": "Incorrect! A bijection with real numbers would make the set uncountable, as Cantor's diagonalization proves that real numbers cannot be put in one-to-one correspondence with natural numbers."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -26,7 +27,10 @@
         "d": "infinite and countable"
       },
       "explanations": {
-        "c": "There are infinite number of real numbers between any two real numbers, and they can not all be mapped to natural numbers. This can be shown using diagonalization argument."
+        "a": "Incorrect! While real numbers are indeed infinite, they cannot be put in bijection with natural numbers. Cantor's diagonalization proof shows that for any attempted counting, we can always construct a real number not in the list.",
+        "b": "Incorrect! Real numbers are neither finite (there are infinitely many numbers just between 0 and 1) nor countable (as proven by Cantor's diagonalization argument showing no bijection with naturals exists).",
+        "c": "Correct! Real numbers are infinite (between any two real numbers there are infinitely many others) and uncountable (Cantor's diagonalization proves no bijection exists with natural numbers).",
+        "d": "Incorrect! This contradicts the fact that real numbers are uncountable. While they are infinite, no bijection can exist between real numbers and natural numbers, as proven by diagonalization."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -40,7 +44,10 @@
         "d": "none of the above"
       },
       "explanations": {
-        "d": "All of the above mentioned set of numbers are countable as they can be mapped to natural numbers."
+        "a": "Incorrect! Integers are countable - we can create a bijection with natural numbers using the mapping f(n) = n/2 for even n and -(n-1)/2 for odd n, showing they are countable.",
+        "b": "Incorrect! Rational numbers are countable through a diagonal enumeration scheme. We can list all fractions p/q and create a bijection by skipping duplicates and zeros.",
+        "c": "Incorrect! Binary numbers (as finite strings) are countable as each can be converted to a unique natural number by interpreting it as a base-2 number.",
+        "d": "Correct! All the mentioned sets are countable as each can be put in one-to-one correspondence with natural numbers through well-defined bijective functions."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -54,7 +61,10 @@
         "d": "all of the above"
       },
       "explanations": {
-        "d": "All of the above mentioned set of numbers are countable as they can be mapped to natural numbers."
+        "a": "Incorrect! While integers are countable through the alternating positive/negative mapping with natural numbers, this answer is incomplete as it ignores other countable sets in the options.",
+        "b": "Incorrect! While rational numbers are countable through the diagonal enumeration method (listing all p/q fractions), this answer is incomplete as other options are also countable.",
+        "c": "Incorrect! While finite binary strings are countable (each can be mapped to its decimal equivalent), this answer is incomplete as it ignores other countable sets listed.",
+        "d": "Correct! All these sets are countable: integers through alternating mapping, rationals through diagonal enumeration, and binary numbers through decimal conversion. Each has a bijection with ℕ."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -66,10 +76,62 @@
         "b": "false"
       },
       "explanations": {
-        "a": "There are countably many Turing machines and uncountably many languages, so there are some languages that a Turing machine can not accept."
+        "a": "Correct! This follows from a counting argument: there are uncountably many possible languages (all possible subsets of Σ*) but only countably many Turing machines (as each has a finite description). Therefore, by the pigeonhole principle, some languages must be unacceptable.",
+        "b": "Incorrect! If all languages were Turing-acceptable, we would have a bijection between Turing machines (countable) and all possible languages (uncountable). This is impossible by Cantor's theorem."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Given a set $ S = \\{1, 2, 3, 4\\} $ and an equivalence relation $ R $ on $ S $, if we know that $ [1] = \\{1, 2\\} $ and $ [3] = \\{3, 4\\} $, what can we conclude?",
+      "answers": {
+        "a": "$ (2,1) \\in R $ but $ (1,2) \\notin R $",
+        "b": "$ (2,3) \\in R $ and $ (3,4) \\in R $",
+        "c": "$ (2,2) \\notin R $ but $ (1,2) \\in R $",
+        "d": "$ (2,2) \\in R $ and $ (1,2) \\in R $"
+      },
+      "explanations": {
+        "a": "Incorrect! Since R is an equivalence relation, it must be symmetric. If (2,1) ∈ R, then (1,2) must also be in R.",
+        "b": "Incorrect! Since [1] and [3] are different equivalence classes, they must be disjoint. Therefore, (2,3) ∉ R.",
+        "c": "Incorrect! Every equivalence relation must be reflexive, so (2,2) must be in R.",
+        "d": "Correct! Since [1] = {1,2}, we know (1,2) ∈ R, and by reflexivity of equivalence relations, (2,2) must be in R."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Let $ R $ be an equivalence relation on $ \\mathbb{Z} $ defined by $ aRb $ if and only if $ |a - b| \\leq 2 $. What is the size of the equivalence class $ [0]_R $?",
+      "answers": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "5"
+      },
+      "explanations": {
+        "a": "Incorrect! [0]ᵣ contains more than just -1 and 1. Remember, |a-b|≤2 means we include numbers that differ by at most 2.",
+        "b": "Incorrect! [0]ᵣ contains more than just -1, 0, and 1. Consider all integers that differ from 0 by at most 2.",
+        "c": "Incorrect! [0]ᵣ = {-2,-1,0,1,2} as these are all integers that differ from 0 by at most 2.",
+        "d": "Correct! [0]ᵣ = {-2,-1,0,1,2} because these are exactly the integers x where |x-0|≤2. This gives us 5 elements."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Let $ R $ be an equivalence relation on a finite set $ A $ with $ |A| = 8 $. If $ R $ has exactly three equivalence classes and one class contains 4 elements, what is the sum of all possible sizes for the second largest equivalence class?",
+      "answers": {
+        "a": "6",
+        "b": "7",
+        "c": "8",
+        "d": "9"
+      },
+      "explanations": {
+        "a": "Incorrect! With |A|=8 and one class of 4 elements, the possible distributions for remaining 4 elements into 2 classes include (3,1) and (2,2), giving sum 3+2=5.",
+        "b": "Incorrect! The sum should include all possible sizes for the second largest class. With distributions (3,1) and (2,2), sum is 3+2=5.",
+        "c": "Incorrect! This exceeds the possible sum. Remember we only have 4 elements left to distribute into 2 classes after the first class of 4.",
+        "d": "Correct! With |A|=8, one class of 4, and three total classes, the possible distributions are (4,3,1) and (4,2,2). The second largest class can be 3 or 2, summing to 5."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
     }
   ]
 }

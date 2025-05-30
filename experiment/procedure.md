@@ -10,6 +10,6 @@ we enter 6 as the input in the window size and the following set of strings is o
 
 ![strings](images/strings.png)
 
-we flip the first bit $1$ of first generated string and enter $0$ in the answer field. we flip the second bit $0$ of the second string and enter $1$ in the answer field after the first bit. we repeat this process until all the bits highlighted in red are flipped. As we can see, the bits we flip appear to form a diagonal and the resulting binary string from their compliment comes out to be $010101$.
+we flip the first bit $ 1 $ of first generated string and enter $ 0 $ in the answer field. we flip the second bit $ 0 $ of the second string and enter $ 1 $ in the answer field after the first bit. we repeat this process until all the bits highlighted in red are flipped. As we can see, the bits we flip appear to form a diagonal and the resulting binary string from their compliment comes out to be $ 010101 $.
 
 clicking on check with our answer will provide us the a message saying "the answer is correct".

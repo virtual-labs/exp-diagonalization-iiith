@@ -1,15 +1,49 @@
-# Procedure
+### Overview
 
-The experiment simulation shows an example of Cantor's diagonlization on binary numbers. It shows n strings among infinte binary strings of infinite length of which first n characters are visible. The n here is the window size which is based on user input and goes from 1 to 10 in integer values. Using the strings and their parts visible to use, we try to find a string dissimilar to all of them. we enter the resutling string in the area that appears in the simulation after generating the strings. we click check to check if the entered string is correct or not.
+The experiment demonstrates Cantor's diagonalization technique using binary numbers. The simulation works with the following principles:
 
-## Example
+1. It displays n binary strings (where n is your chosen window size)
+2. Each string is infinite in length, but only the first n characters are visible
+3. The window size (n) can be any integer from 1 to 10
+4. Your goal is to find a binary string that differs from all displayed strings
 
-We now take an example run of the simulation:-
+### Steps to Perform the Experiment
 
-we enter 6 as the input in the window size and the following set of strings is oberved.
+1. Choose a Window Size
+   - Enter an integer between 1 and 10
+   - This determines how many strings you'll see and their visible length
 
-![strings](images/strings.png)
+2. Observe the Generated Strings
+   - The simulation will display n binary strings
+   - Each string will show its first n characters
 
-we flip the first bit $ 1 $ of first generated string and enter $ 0 $ in the answer field. we flip the second bit $ 0 $ of the second string and enter $ 1 $ in the answer field after the first bit. we repeat this process until all the bits highlighted in red are flipped. As we can see, the bits we flip appear to form a diagonal and the resulting binary string from their compliment comes out to be $ 010101 $.
+3. Create Your Different String
+   - Use the diagonalization method to construct a new binary string
+   - Your string should differ from every displayed string in at least one position
 
-clicking on check with our answer will provide us the a message saying "the answer is correct".
+4. Enter Your Answer
+   - Input your constructed binary string in the provided answer field
+
+5. Verify Your Solution
+   - Click the "Check" button
+   - The simulation will tell you if your answer is correct
+
+### Example Walkthrough
+
+1. Input Selection:
+   - Enter window size: 6
+
+2. Generated Display:
+   ![strings](images/strings.png)
+
+3. String Construction Process:
+   - First position: Flip the first bit (1) of first string → Enter 0
+   - Second position: Flip the second bit (0) of second string → Enter 1
+   - Continue this process along the diagonal
+   - Flip each highlighted bit (shown in red)
+   - Final constructed string: $ 010101 $
+
+4. Result Verification:
+   - Enter the string $ 010101 $
+   - Click "Check"
+   - You will receive the message "the answer is correct".

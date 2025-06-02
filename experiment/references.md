@@ -1,6 +1,6 @@
-# References
+### References anf Further Reading
 
-## Textbooks
+### Textbooks
 
 1. Sipser, Michael. "Introduction to the Theory of Computation", 3rd Edition, Cengage Learning, 2012.
    - Chapter 1: Regular Languages
@@ -17,9 +17,9 @@
    - Section 6.4: Countable Sets
    - Section 6.5: The Continuum
 
-## Online Resources
+### Online Resources
 
-### Video Lectures
+#### Video Lectures
 
 1. MIT OpenCourseWare. "6.042J Mathematics for Computer Science"
    - Lecture: Infinite Sets
@@ -30,7 +30,7 @@
    - Week 3: Relations
    - [Access Course](https://nptel.ac.in/courses/106/106/106106183/)
 
-### Interactive Learning
+#### Interactive Learning
 
 1. Brilliant.org
    - Course: Infinity
@@ -40,7 +40,7 @@
    - Course: Set Theory
    - Topic: [Cardinality](https://www.khanacademy.org/math/statistics-probability/probability-library)
 
-### Tutorial Websites
+#### Tutorial Websites
 
 1. GeeksforGeeks
    - [Set Theory and Relations](https://www.geeksforgeeks.org/set-theory-and-relations/)
@@ -50,7 +50,7 @@
    - [Cantor's Theorem](https://plato.stanford.edu/entries/set-theory/cantor-theorem.html)
    - [The Development of Set Theory](https://plato.stanford.edu/entries/set-theory/develop.html)
 
-## Research Papers
+### Research Papers
 
 1. Cantor, Georg. "Über eine Eigenschaft des Inbegriffes aller reellen algebraischen Zahlen" (On a Property of the Collection of All Real Algebraic Numbers), 1874.
    - Historical paper introducing the diagonalization argument
@@ -60,7 +60,7 @@
    - Demonstrates the application of diagonalization to computability theory
    - [Access via Project Euclid](https://projecteuclid.org/journals/journal-of-symbolic-logic/volume-2/issue-4/Reviews-Turing-On-Computable-Numbers-with-an-Application-to-the/10.2307/2269014.full)
 
-## Additional Learning Materials
+### Additional Learning Materials
 
 1. Wolfram MathWorld
    - [Cantor's Diagonal Method](https://mathworld.wolfram.com/CantorDiagonalMethod.html)

@@ -50,7 +50,7 @@
         "d": "Correct! All the mentioned sets are countable as each can be put in one-to-one correspondence with natural numbers through well-defined bijective functions."
       },
       "correctAnswer": "d",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
       "question": "Which of these is a countable set?",
@@ -67,7 +67,7 @@
         "d": "Correct! All these sets are countable: integers through alternating mapping, rationals through diagonal enumeration, and binary numbers through decimal conversion. Each has a bijection with ℕ."
       },
       "correctAnswer": "d",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
       "question": "There are languages that can not be accepted by a turing machine",
@@ -131,6 +131,23 @@
         "d": "Correct! With |A|=8, one class of 4, and three total classes, the possible distributions are (4,3,1) and (4,2,2). The second largest class can be 3 or 2, summing to 5."
       },
       "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Consider Cantor's diagonalization proof applied to the set of all infinite binary strings. If we have an enumeration $s_1, s_2, s_3, \\ldots$ and construct the diagonal string $d$ where $d_i$ is the opposite of the $i$-th bit of $s_i$, which statement is most accurate?",
+      "answers": {
+        "a": "The diagonal string $d$ must appear somewhere in the enumeration",
+        "b": "The diagonal string $d$ differs from every string in the enumeration in at least one position",
+        "c": "The diagonal string $d$ can be made to equal some string in the enumeration by careful construction",
+        "d": "The diagonal construction only works for finite sets"
+      },
+      "explanations": {
+        "a": "Incorrect! This contradicts the fundamental insight of diagonalization. If $d$ appeared as string $s_k$ in the enumeration, then $d_k$ would have to equal $s_{k,k}$ (the k-th bit of $s_k$), but by construction $d_k$ is the opposite of $s_{k,k}$.",
+        "b": "Correct! By construction, $d$ differs from each $s_i$ in at least position $i$, since $d_i$ is chosen to be different from $s_{i,i}$. This proves that no enumeration can contain all infinite binary strings.",
+        "c": "Incorrect! No matter how the enumeration is constructed, the diagonal argument ensures that the constructed string $d$ cannot equal any string in the enumeration, as it differs from $s_i$ in position $i$ for all $i$.",
+        "d": "Incorrect! Diagonalization specifically applies to infinite sets and enumerations. For finite sets, we can trivially enumerate all elements, but infinite sets like the real numbers resist such enumeration."
+      },
+      "correctAnswer": "b",
       "difficulty": "advanced"
     }
   ]

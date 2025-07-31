@@ -1,1 +1,3 @@
-This experiment aims to introduce you to the concept of diagonalization by Georg Cantor. This will allow you understand what a countable or uncountable set means, while allowing you to figure out if a given set is countable or uncountable using diagonalization. This will be done through a refesher on concepts of "sets and subsets" and "mapping two sets in a function". This information will be used to map the domain of natural numbers to any given co domain set for the fucntion on Cantor's diagonalization.
+- Learn what it means for a set to be countable or uncountable.
+- See how to use diagonalization to show that some sets (like real numbers or infinite binary strings) cannot be listed or matched one-to-one with natural numbers.
+- Practice constructing a diagonal string that is guaranteed to be different from every string in a given list.

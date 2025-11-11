@@ -77,7 +77,7 @@ To determine if a given set is countable or not, we use the *diagonalization met
 2. Any binary number can be preceded by an infinite number of $ 0 $s
 3. The set can be written as a set of infinite number of infinitely long binary strings
 4. Arrange them in a numbered list starting from $ 1 $
-5. Take a binary string $ s $
+5. Construct a binary string $ s $
 6. Set the $ i $th bit of $ s $ to be the complement of $ i $th bit of the $ i $th binary string in the list
 7. This creates a binary string $ s $ which differs from every possible binary string by at least one bit
 

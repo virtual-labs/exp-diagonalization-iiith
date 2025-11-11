@@ -1,0 +1,3 @@
+- Learn what it means for a set to be countable or uncountable.
+- See how to use diagonalization to show that some sets (like real numbers or infinite binary strings) cannot be listed or matched one-to-one with natural numbers.
+- Practice constructing a diagonal string that is guaranteed to be different from every string in a given list.

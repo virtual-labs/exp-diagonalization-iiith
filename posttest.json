@@ -1,0 +1,154 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What property makes a set countable?",
+      "answers": {
+        "a": "no decimal values",
+        "b": "no negative values",
+        "c": "bijection with natural numbers",
+        "d": "bijection with real numbers"
+      },
+      "explanations": {
+        "a": "Incorrect! Having decimal values doesn't determine countability - for example, rational numbers (like 1/2, 1/3) have decimals but are countable through a bijection with natural numbers.",
+        "b": "Incorrect! The presence of negative values is irrelevant to countability - integers are countable despite having negative values, via the bijection f(n) = n/2 if n is even, -(n-1)/2 if n is odd.",
+        "c": "Correct! By definition, a set is countable if and only if there exists a bijection (one-to-one and onto function) between it and the natural numbers or a finite subset of natural numbers.",
+        "d": "Incorrect! A bijection with real numbers would make the set uncountable, as Cantor's diagonalization proves that real numbers cannot be put in one-to-one correspondence with natural numbers."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The set of all real numbers is ______.",
+      "answers": {
+        "a": "infinite and countable",
+        "b": "finite and countable",
+        "c": "infinite and uncountable",
+        "d": "infinite and countable"
+      },
+      "explanations": {
+        "a": "Incorrect! While real numbers are indeed infinite, they cannot be put in bijection with natural numbers. Cantor's diagonalization proof shows that for any attempted counting, we can always construct a real number not in the list.",
+        "b": "Incorrect! Real numbers are neither finite (there are infinitely many numbers just between 0 and 1) nor countable (as proven by Cantor's diagonalization argument showing no bijection with naturals exists).",
+        "c": "Correct! Real numbers are infinite (between any two real numbers there are infinitely many others) and uncountable (Cantor's diagonalization proves no bijection exists with natural numbers).",
+        "d": "Incorrect! This contradicts the fact that real numbers are uncountable. While they are infinite, no bijection can exist between real numbers and natural numbers, as proven by diagonalization."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of these is an uncountable set?",
+      "answers": {
+        "a": "integers",
+        "b": "rational numbers",
+        "c": "infinite binary strings",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "a": "Incorrect! Integers are countable - we can create a bijection with natural numbers using the mapping f(n) = n/2 for even n and -(n-1)/2 for odd n, showing they are countable.",
+        "b": "Incorrect! Rational numbers are countable through a diagonal enumeration scheme. We can list all fractions p/q and create a bijection by skipping duplicates and zeros.",
+        "c": "Incorrect! The set of infinite binary strings is uncountable, as proven by Cantor's diagonalization. This set has cardinality 2^(ℵ₀).",
+        "d": "Correct! All the mentioned sets are countable. Integers and rationals are countable through established bijections. Note: finite binary strings are also countable, but infinite binary strings are uncountable."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of these is a countable set?",
+      "answers": {
+        "a": "integers",
+        "b": "rational numbers",
+        "c": "finite binary strings",
+        "d": "all of the above"
+      },
+      "explanations": {
+        "a": "Incorrect! While integers are countable through the alternating positive/negative mapping with natural numbers, this answer is incomplete as it ignores other countable sets in the options.",
+        "b": "Incorrect! While rational numbers are countable through the diagonal enumeration method (listing all p/q fractions), this answer is incomplete as other options are also countable.",
+        "c": "Incorrect! While finite binary strings are countable (each can be mapped to its decimal equivalent), this answer is incomplete as it ignores other countable sets listed.",
+        "d": "Correct! All these sets are countable: integers through alternating mapping, rationals through diagonal enumeration, and finite binary strings through decimal conversion. Each has a bijection with ℕ."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "There are languages that can not be accepted by a turing machine",
+      "answers": {
+        "a": "true",
+        "b": "false"
+      },
+      "explanations": {
+        "a": "Correct! This follows from a counting argument: there are uncountably many possible languages (all possible subsets of Σ*) but only countably many Turing machines (as each has a finite description). Therefore, by the pigeonhole principle, some languages must be unacceptable.",
+        "b": "Incorrect! If all languages were Turing-acceptable, we would have a bijection between Turing machines (countable) and all possible languages (uncountable). This is impossible by Cantor's theorem."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Given a set $ S = \\{1, 2, 3, 4\\} $ and an equivalence relation $ R $ on $ S $, if we know that $ [1] = \\{1, 2\\} $ and $ [3] = \\{3, 4\\} $, what can we conclude?",
+      "answers": {
+        "a": "$ (2,1) \\in R $ but $ (1,2) \\notin R $",
+        "b": "$ (2,3) \\in R $ and $ (3,4) \\in R $",
+        "c": "$ (2,2) \\notin R $ but $ (1,2) \\in R $",
+        "d": "$ (2,2) \\in R $ and $ (1,2) \\in R $"
+      },
+      "explanations": {
+        "a": "Incorrect! Since R is an equivalence relation, it must be symmetric. If (2,1) ∈ R, then (1,2) must also be in R.",
+        "b": "Incorrect! Since [1] and [3] are different equivalence classes, they must be disjoint. Therefore, (2,3) ∉ R.",
+        "c": "Incorrect! Every equivalence relation must be reflexive, so (2,2) must be in R.",
+        "d": "Correct! Since [1] = {1,2}, we know (1,2) ∈ R, and by reflexivity of equivalence relations, (2,2) must be in R."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Let $ R $ be an equivalence relation on $ \\mathbb{Z} $ defined by $ aRb $ if and only if $ |a - b| \\leq 2 $. What is the size of the equivalence class $ [0]_R $?",
+      "answers": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "5"
+      },
+      "explanations": {
+        "a": "Incorrect! [0]ᵣ contains more than just -1 and 1. Remember, |a-b|≤2 means we include numbers that differ by at most 2.",
+        "b": "Incorrect! [0]ᵣ contains more than just -1, 0, and 1. Consider all integers that differ from 0 by at most 2.",
+        "c": "Incorrect! [0]ᵣ = {-2,-1,0,1,2} as these are all integers that differ from 0 by at most 2.",
+        "d": "Correct! [0]ᵣ = {-2,-1,0,1,2} because these are exactly the integers x where |x-0|≤2. This gives us 5 elements."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Let $ R $ be an equivalence relation on a finite set $ A $ with $ |A| = 8 $. If $ R $ has exactly three equivalence classes and one class contains 4 elements, what is the sum of all possible sizes for the second largest equivalence class?",
+      "answers": {
+        "a": "6",
+        "b": "7",
+        "c": "8",
+        "d": "5"
+      },
+      "explanations": {
+        "a": "Incorrect! With |A|=8 and one class of 4 elements, the possible distributions for remaining 4 elements into 2 classes include (3,1) and (2,2), giving sum 3+2=5.",
+        "b": "Incorrect! The sum should include all possible sizes for the second largest class. With distributions (3,1) and (2,2), sum is 3+2=5.",
+        "c": "Incorrect! This exceeds the possible sum. Remember we only have 4 elements left to distribute into 2 classes after the first class of 4.",
+        "d": "Correct! With |A|=8, one class of 4, and three total classes, the possible distributions are (4,3,1) and (4,2,2). The second largest class can be 3 or 2, summing to 3+2=5."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Consider Cantor's diagonalization proof applied to the set of all infinite binary strings. If we have an enumeration $s_1, s_2, s_3, \\ldots$ and construct the diagonal string $d$ where $d_i$ is the opposite of the $i$-th bit of $s_i$, which statement is most accurate?",
+      "answers": {
+        "a": "The diagonal string $d$ must appear somewhere in the enumeration",
+        "b": "The diagonal string $d$ differs from every string in the enumeration in at least one position",
+        "c": "The diagonal string $d$ can be made to equal some string in the enumeration by careful construction",
+        "d": "The diagonal construction only works for finite sets"
+      },
+      "explanations": {
+        "a": "Incorrect! This contradicts the fundamental insight of diagonalization. If $d$ appeared as string $s_k$ in the enumeration, then $d_k$ would have to equal $s_{k,k}$ (the k-th bit of $s_k$), but by construction $d_k$ is the opposite of $s_{k,k}$.",
+        "b": "Correct! By construction, $d$ differs from each $s_i$ in at least position $i$, since $d_i$ is chosen to be different from $s_{i,i}$. This proves that no enumeration can contain all infinite binary strings.",
+        "c": "Incorrect! No matter how the enumeration is constructed, the diagonal argument ensures that the constructed string $d$ cannot equal any string in the enumeration, as it differs from $s_i$ in position $i$ for all $i$.",
+        "d": "Incorrect! Diagonalization specifically applies to infinite sets and enumerations. For finite sets, we can trivially enumerate all elements, but infinite sets like the real numbers resist such enumeration."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}

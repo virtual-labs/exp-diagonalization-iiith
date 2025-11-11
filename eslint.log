@@ -1,0 +1,14 @@
+
+/home/runner/work/exp-diagonalization-iiith/exp-diagonalization-iiith/experiment/simulation/Diagonalization.js
+  249:10  warning  'updateAlphabetSize' is defined but never used  no-unused-vars
+  253:10  warning  'updateWindowSize' is defined but never used    no-unused-vars
+  257:10  warning  'updateWindowStart' is defined but never used   no-unused-vars
+  261:10  warning  'generateNewTable' is defined but never used    no-unused-vars
+
+/home/runner/work/exp-diagonalization-iiith/exp-diagonalization-iiith/experiment/simulation/mobile-detection.js
+  393:7   warning  'mobileDetection' is assigned a value but never used  no-unused-vars
+  396:38  warning  'module' is not defined                               no-undef
+  397:3   warning  'module' is not defined                               no-undef
+
+✖ 7 problems (0 errors, 7 warnings)
+

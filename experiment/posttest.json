@@ -40,14 +40,14 @@
       "answers": {
         "a": "integers",
         "b": "rational numbers",
-        "c": "binary numbers",
+        "c": "infinite binary strings",
         "d": "none of the above"
       },
       "explanations": {
         "a": "Incorrect! Integers are countable - we can create a bijection with natural numbers using the mapping f(n) = n/2 for even n and -(n-1)/2 for odd n, showing they are countable.",
         "b": "Incorrect! Rational numbers are countable through a diagonal enumeration scheme. We can list all fractions p/q and create a bijection by skipping duplicates and zeros.",
-        "c": "Incorrect! Binary numbers (as finite strings) are countable as each can be converted to a unique natural number by interpreting it as a base-2 number.",
-        "d": "Correct! All the mentioned sets are countable as each can be put in one-to-one correspondence with natural numbers through well-defined bijective functions."
+        "c": "Incorrect! The set of infinite binary strings is uncountable, as proven by Cantor's diagonalization. This set has cardinality 2^(ℵ₀).",
+        "d": "Correct! All the mentioned sets are countable. Integers and rationals are countable through established bijections. Note: finite binary strings are also countable, but infinite binary strings are uncountable."
       },
       "correctAnswer": "d",
       "difficulty": "intermediate"
@@ -57,14 +57,14 @@
       "answers": {
         "a": "integers",
         "b": "rational numbers",
-        "c": "binary numbers",
+        "c": "finite binary strings",
         "d": "all of the above"
       },
       "explanations": {
         "a": "Incorrect! While integers are countable through the alternating positive/negative mapping with natural numbers, this answer is incomplete as it ignores other countable sets in the options.",
         "b": "Incorrect! While rational numbers are countable through the diagonal enumeration method (listing all p/q fractions), this answer is incomplete as other options are also countable.",
         "c": "Incorrect! While finite binary strings are countable (each can be mapped to its decimal equivalent), this answer is incomplete as it ignores other countable sets listed.",
-        "d": "Correct! All these sets are countable: integers through alternating mapping, rationals through diagonal enumeration, and binary numbers through decimal conversion. Each has a bijection with ℕ."
+        "d": "Correct! All these sets are countable: integers through alternating mapping, rationals through diagonal enumeration, and finite binary strings through decimal conversion. Each has a bijection with ℕ."
       },
       "correctAnswer": "d",
       "difficulty": "intermediate"
@@ -122,13 +122,13 @@
         "a": "6",
         "b": "7",
         "c": "8",
-        "d": "9"
+        "d": "5"
       },
       "explanations": {
         "a": "Incorrect! With |A|=8 and one class of 4 elements, the possible distributions for remaining 4 elements into 2 classes include (3,1) and (2,2), giving sum 3+2=5.",
         "b": "Incorrect! The sum should include all possible sizes for the second largest class. With distributions (3,1) and (2,2), sum is 3+2=5.",
         "c": "Incorrect! This exceeds the possible sum. Remember we only have 4 elements left to distribute into 2 classes after the first class of 4.",
-        "d": "Correct! With |A|=8, one class of 4, and three total classes, the possible distributions are (4,3,1) and (4,2,2). The second largest class can be 3 or 2, summing to 5."
+        "d": "Correct! With |A|=8, one class of 4, and three total classes, the possible distributions are (4,3,1) and (4,2,2). The second largest class can be 3 or 2, summing to 3+2=5."
       },
       "correctAnswer": "d",
       "difficulty": "advanced"

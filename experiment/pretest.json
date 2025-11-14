@@ -2,38 +2,191 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of these is an infinite set?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "all rational numbers from $ 1 $ to $ 1 $ billion",
+        "b": "all real numbers from $ 5 $ to $ 10 $",
+        "c": "integers smaller than $ 2^{10} $",
+        "d": "all of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect! Although there are infinitely many rational numbers between any two rationals, the set of rationals in the bounded interval [1, 1 billion] is finite when considering only rational numbers that can be explicitly listed or enumerated within that finite interval.",
+        "b": "Correct! Between any two real numbers, there are infinitely many real numbers, making this an infinite set.",
+        "c": "Incorrect! This is a finite set as it has an upper bound (2¹⁰) and integers are discrete.",
+        "d": "Incorrect! Only the set of real numbers between 5 and 10 is infinite."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider a function where no two elements of the domain map to the same element in the co-domain and where the size of the domain and the co-domain is the same (for finite sets). Such function is ______.",
+      "answers": {
+        "a": "injective",
+        "b": "surjective",
+        "c": "bijective",
+        "d": "none of these"
+      },
+      "explanations": {
+        "a": "Incorrect! While the function is injective (one-to-one), it's also surjective since domain and codomain have same size.",
+        "b": "Incorrect! While the function is surjective (onto), it's also injective due to the one-to-one mapping.",
+        "c": "Correct! For finite sets of equal size with no two elements mapping to the same output, the function must be bijective (both injective and surjective).",
+        "d": "Incorrect! The function satisfies properties of both injection and surjection, making it bijective."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider a function where two elements of the domain may map to the same element in the co-domain and where the size of the domain and the co-domain is the same (for finite sets). Such function is ______.",
+      "answers": {
+        "a": "injective",
+        "b": "surjective",
+        "c": "bijective",
+        "d": "none of these"
+      },
+      "explanations": {
+        "a": "Incorrect! The function cannot be injective as two elements map to the same output.",
+        "b": "Incorrect! With same-sized finite sets, if two elements map to same output, some outputs must be unmapped.",
+        "c": "Incorrect! Cannot be bijective as it's neither injective nor surjective.",
+        "d": "Correct! For finite sets of equal size, if two elements map to the same output, the function is neither injective nor surjective, making it none of these types."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider a function where every element of the co-domain is mapped by some element of the domain. Such function is ______.",
+      "answers": {
+        "a": "injective",
+        "b": "surjective",
+        "c": "bijective",
+        "d": "none of these"
+      },
+      "explanations": {
+        "a": "Incorrect! The function might not be one-to-one, multiple elements could map to same output.",
+        "b": "Correct! This is the definition of a surjective (onto) function - every element in codomain has at least one preimage.",
+        "c": "Incorrect! While surjective, we don't know if it's injective, so can't be sure it's bijective.",
+        "d": "Incorrect! The function is clearly surjective by definition."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A function $ f(x)=4x $ maps the set $ \\{1,2,3,4\\} $ to the set $ \\{1,2,...,16\\} $. The function is ______.",
+      "answers": {
+        "a": "injective",
+        "b": "surjective",
+        "c": "bijective",
+        "d": "none of these"
+      },
+      "explanations": {
+        "a": "Correct! The function maps {1,2,3,4} to {4,8,12,16}, with each input giving a unique output.",
+        "b": "Incorrect! Many numbers in codomain (like 1,2,3,5,6,7,9,...) are not mapped to by any input.",
+        "c": "Incorrect! Cannot be bijective as it's not surjective (many unmapped codomain elements).",
+        "d": "Incorrect! The function is clearly injective as each input maps to a unique output."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Let $ A $ be an infinite set and $ B $ be a finite set. Which statement must be true?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "There exists a bijection from $ A $ to $ B $",
+        "b": "There exists a surjection from $ A $ to $ B $",
+        "c": "There exists an injection from $ B $ to $ A $",
+        "d": "There exists a bijection from $ B $ to $ A $"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect! A bijection between infinite and finite sets is impossible as they have different cardinalities.",
+        "b": "Correct! We can map multiple elements from A to each element in B, creating a surjection. (Additionally, option c is also correct.)",
+        "c": "Correct! Since A is infinite and B is finite, we can always find an injection from B to A by mapping each element of B to distinct elements in A. (Additionally, option b is also correct.)",
+        "d": "Incorrect! A bijection would require both sets to have the same cardinality."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Using Cantor's diagonalization method, which statement is true?",
+      "answers": {
+        "a": "Every infinite set is countable",
+        "b": "The set of all infinite binary strings is countable",
+        "c": "The set of all finite binary strings is uncountable",
+        "d": "The set of all infinite binary strings is uncountable"
+      },
+      "explanations": {
+        "a": "Incorrect! Cantor's method proves some infinite sets are uncountable.",
+        "b": "Incorrect! This is exactly what Cantor's method disproves.",
+        "c": "Incorrect! The set of finite binary strings is actually countable.",
+        "d": "Correct! Cantor's diagonalization proves this set is uncountable by showing no bijection to natural numbers exists."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If $ f: A \\rightarrow B $ is surjective and $ |A| = |B| $ (for finite sets), what can we conclude?",
+      "answers": {
+        "a": "$ f $ must be injective",
+        "b": "$ f $ might be injective",
+        "c": "$ f $ cannot be injective",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Correct! For finite sets with equal sizes and surjectivity, each element in B must have exactly one preimage by the pigeonhole principle, making f injective.",
+        "b": "Incorrect! It must be injective, not just might be (for finite sets).",
+        "c": "Incorrect! It actually must be injective due to the pigeonhole principle (for finite sets).",
+        "d": "Incorrect! We can make a definite conclusion about injectivity when the sets are finite."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Given sets $ A $ and $ B $ where $ |A| = \\aleph_0 $ and $ |B| = 2^{\\aleph_0} $, which statement is true?",
+      "answers": {
+        "a": "There exists a bijection between $ A $ and $ B $",
+        "b": "There exists a surjection from $ A $ to $ B $",
+        "c": "There exists an injection from $ B $ to $ A $",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Incorrect! By Cantor's theorem, no bijection exists between these cardinalities.",
+        "b": "Incorrect! A countable set cannot surject onto an uncountable set.",
+        "c": "Incorrect! A larger set cannot inject into a smaller one.",
+        "d": "Correct! None of these functions can exist due to the strict inequality of cardinalities."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Let $ f: \\mathbb{N} \\rightarrow \\mathbb{Q} $ be a function. Which statement must be false?",
+      "answers": {
+        "a": "$ f $ could be injective",
+        "b": "$ f $ could be surjective",
+        "c": "$ f $ could be bijective",
+        "d": "$ f $ must be neither injective nor surjective"
+      },
+      "explanations": {
+        "a": "Incorrect! An injection from ℕ to ℚ is possible as both are countable.",
+        "b": "Incorrect! A surjection from ℕ to ℚ is possible as rationals are countable.",
+        "c": "Incorrect! A bijection between ℕ and ℚ exists as both are countably infinite.",
+        "d": "Correct! This must be false as bijections between ℕ and ℚ do exist."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "If $ A $ and $ B $ are sets with $ |A| = |B| $, and $ f: A \\rightarrow B $ is injective but not surjective (for finite sets), what can we conclude?",
+      "answers": {
+        "a": "This is impossible",
+        "b": "$ A $ and $ B $ must be finite",
+        "c": "$ A $ and $ B $ must be infinite",
+        "d": "$ B $ must be countable"
+      },
+      "explanations": {
+        "a": "Correct! For finite sets where |A|=|B| and f is injective, it must also be surjective by the pigeonhole principle, making this situation impossible.",
+        "b": "Incorrect! The impossibility holds even if we assumed finite sets, so this doesn't explain why it's impossible.",
+        "c": "Incorrect! The impossibility holds regardless of whether sets are finite or infinite.",
+        "d": "Incorrect! The cardinality of B is irrelevant to the impossibility."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
